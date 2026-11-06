@@ -1,4 +1,4 @@
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/12d892ef-1900-48b6-9ad7-68f4ab4bd7ea" /><div align="center">
+
 
 # 🔐 Cybersecurity Lab Environment Setup
 
@@ -98,11 +98,12 @@ Additional target machines can be added to the same virtual network in future pr
 # 🪜 Lab Setup Procedure
 
 ## Step 1. Install 7-Zip
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/12d892ef-1900-48b6-9ad7-68f4ab4bd7ea" /><div align="center">
 
 7-Zip was installed to extract the Kali Linux virtual-machine package, which may be distributed as a `.7z` archive.
 
 **Tool:** 7-Zip
-
+![](Screenshot (226).png)
 ---
 
 ## Step 2. Install VirtualBox
@@ -216,42 +217,6 @@ DNS:
 ```
 
 ---
-
-# 🐞 Problems Encountered & Solutions
-
-Documenting problems is an important part of the project.
-
-## Problem 1. Internet Connectivity After Static IP Configuration
-
-After manually configuring the IPv4 settings, Internet connectivity may fail depending on the Kali/NetworkManager configuration.
-
-One workaround used during this lab was:
-
-```bash
-sudo nmcli connection modify "Wired connection 1" ipv4.dad-timeout 0
-```
-
-The network connection was then restarted/rebooted and connectivity was tested again.
-
-> **Important:** Network interface and connection names may differ between systems. Students should first identify their actual connection name before running an `nmcli` command.
-
----
-
-## Problem 2. VirtualBox VT-x / Virtualization Error
-
-The VM initially failed to start because hardware virtualization was disabled in the system firmware/BIOS.
-
-The issue was resolved by:
-
-1. Restarting the computer.
-2. Entering BIOS/UEFI settings.
-3. Enabling Intel VT-x / hardware virtualization.
-4. Saving the configuration.
-5. Restarting the computer.
-6. Starting the Kali VM again.
-
-After enabling virtualization, the VM started successfully.
-
 
 ---
 
