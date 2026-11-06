@@ -1,4 +1,4 @@
-<div align="center">
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/12d892ef-1900-48b6-9ad7-68f4ab4bd7ea" /><div align="center">
 
 # 🔐 Cybersecurity Lab Environment Setup
 
@@ -84,7 +84,7 @@ Additional target machines can be added to the same virtual network in future pr
 | 🧠 Host RAM        | 16 GB               |
 | ⚡ Processor       | Intel Core i7      |
 | 🧰 Hypervisor      | VirtualBox 7.2  |
-| 🐉 Security OS     | Kali Linux 2026.2  |
+| 🐉 Security OS     | Kali Linux 2024.3  |
 | 🧠 Kali RAM        | 2048 MB            |
 | 🌐 Virtual Network | NAT Network        |
 | 📡 Network Address | 10.0.0.0/24        |
